@@ -16,12 +16,10 @@ def estimativa(sala):
     #Estimativa de entrega
     if sala <= 50:
         return "5 minutos"
-    elif sala > 100 and sala <= 150:
+    elif sala > 50 and sala <= 150:
         return "10 minutos"
-    elif sala > 151 and sala <= 200:
-        return "20 minutos"
     else:
-        return "30 minutos"
+        return "20 minutos"
 
 #Criando a função que exibe a janela de finalização do pedido
 def finalizar_pedido():
