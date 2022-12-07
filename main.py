@@ -40,6 +40,7 @@ def finalizar_pedido():
     Label(frame_finalizacao, text="Sabor Escolhido: {}".format(sabor)).pack()
     Label(frame_finalizacao, text="Sala: {}".format(sala)).pack()
     Label(frame_finalizacao, text="Estimativa de Entrega: {}".format(estimativa(sala))).pack()
+    Label(frame_finalizacao, text="Nome do Cliente: {}".format(nome_cliente_entry.get())).pack()
 
 #Criando o frame
 frame = tk.Frame(janela)
@@ -55,6 +56,11 @@ OptionMenu(frame, sabor_escolhido, *sabores).pack()
 Label(frame, text="Digite a sala:").pack()
 sala_entry = Entry(frame)
 sala_entry.pack()
+
+#Adicionando campo para inserção do nome do cliente
+Label(frame, text="Digite seu nome:").pack()
+nome_cliente_entry = Entry(frame)
+nome_cliente_entry.pack()
 
 #Criando o botão de finalizar pedido
 Button(frame, text="Finalizar Pedido", command = finalizar_pedido).pack()
