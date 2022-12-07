@@ -14,12 +14,14 @@ sabores = ['Chocolate','Morango','Limão','Banana','Kiwi','Flocos','Menta','Mela
 #Criando a função que retorna a estimativa do tempo de entrega
 def estimativa(sala):
     #Estimativa de entrega
-    if sala <= 150:
+    if sala <= 50:
+        return "5 minutos"
+    elif sala > 100 and sala <= 150:
+        return "10 minutos"
+    elif sala > 151 and sala <= 200:
         return "20 minutos"
-    elif sala > 150 and sala <= 300:
-        return "30 minutos"
     else:
-        return "40 minutos"
+        return "30 minutos"
 
 #Criando a função que exibe a janela de finalização do pedido
 def finalizar_pedido():
