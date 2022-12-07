@@ -29,7 +29,7 @@ def finalizar_pedido():
 
     #Criando a janela de finalização
     janela_finalizacao = tk.Toplevel()
-    janela_finalizacao.title('Finalizar Pedido')
+    janela_finalizacao.title('Pedido Finalizado')
     
     #Criando o frame
     frame_finalizacao = tk.Frame(janela_finalizacao)
